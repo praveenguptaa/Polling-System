@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import io from "socket.io-client";
 // import ChatPopover from "../../components/chat/ChatPopover.jsx";
-import ChatPopover from "../../components/chat/ChatPopover.jsx";
+import ChatPopover from "../../components/chat/Chatpopover.jsx";
 
 
 import { useNavigate } from "react-router-dom";
