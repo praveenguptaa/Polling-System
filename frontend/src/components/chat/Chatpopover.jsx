@@ -9,6 +9,8 @@ let apiUrl = import.meta.env.VITE_API_BASE_URL;
 
 const socket = io(apiUrl);
 
+// sbdkjbsa
+
 const ChatPopover = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
