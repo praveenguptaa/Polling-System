@@ -1,0 +1,118 @@
+/* .progress-bar-bg {
+  background-color: #7565d9;
+}
+.question {
+  background: linear-gradient(90deg, #343434 0%, #6e6e6e 100%);
+}
+
+.ask-question {
+  float: right;
+  background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+  color: #ffffff !important;
+}
+.poll-history{
+    background: rgba(143, 100, 225, 1);
+
+} */
+
+
+
+
+/* --- Colors based on UI --- */
+:root {
+  --purple-main: #7565d9;
+  --purple-dark: #5e4ec4;
+  --gray-header: #4F4F4F;
+  --bg-light: #F9F9F9;
+}
+
+body {
+  background-color: #fff; /* or #F2F2F2 based on preference */
+}
+
+/* Question Header */
+.question-header {
+  background: #565656; /* Dark gray from screenshot */
+  border-radius: 0; /* Card handles the main radius */
+}
+
+/* Option Cards */
+.card {
+  border: 1px solid #e0e0e0;
+}
+
+.bg-light-gray {
+  background-color: #fff;
+}
+
+.option-card {
+  background-color: #f9f9f9; /* Light background for empty state */
+  border: 1px solid #eee;
+  height: 60px; /* Fixed height for consistency */
+  display: flex;
+  align-items: center;
+}
+
+/* The Progress Fill (Background) */
+.progress-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--purple-main);
+  transition: width 0.6s ease-in-out;
+  z-index: 1;
+}
+
+/* The Option Text Content */
+.option-content {
+  width: 100%;
+  z-index: 2; /* Sits on top of progress bar */
+}
+
+/* Option Circle (1, 2, 3, 4) */
+.option-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.bg-purple {
+  background-color: var(--purple-main) !important;
+}
+
+.text-purple {
+  color: var(--purple-main) !important;
+}
+
+/* Buttons */
+.poll-history-btn {
+  background-color: var(--purple-main);
+  color: white;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(117, 101, 217, 0.3);
+}
+
+.poll-history-btn:hover {
+  background-color: var(--purple-dark);
+  color: white;
+}
+
+.ask-new-btn {
+  background-color: var(--purple-main);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(117, 101, 217, 0.3);
+}
+
+.ask-new-btn:hover {
+  background-color: var(--purple-dark);
+  color: white;
+}
+
+/* Spinner Color */
+.text-purple {
+  color: var(--purple-main);
+}

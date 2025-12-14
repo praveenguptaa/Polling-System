@@ -1,0 +1,149 @@
+/* .progress-bar-bg{
+    background-color: #7565d9 
+}
+.option-border{
+    border-color: #7565d9 !important
+}
+.question{
+    background: linear-gradient(90deg, #343434 0%, #6E6E6E 100%);
+
+}
+
+  
+.landing-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .landing-description {
+    margin-bottom: 30px;
+    color: #6c757d;
+  }
+  .spinner{
+    color: rgba(80, 14, 206, 1);
+  } */
+
+
+  /* --- Global Variables --- */
+:root {
+  --purple-main: #7565d9;
+  --purple-hover: #5e4ec4;
+  --gray-bg: #f5f5f5;
+  --gray-circle: #9ca3af;
+  --dark-header: #565656;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Inter', sans-serif; /* Assuming Inter font is loaded */
+}
+
+/* --- Badge & Loaders --- */
+.poll-badge {
+  background-color: var(--purple-main);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.spinner-border.text-purple {
+  color: var(--purple-main) !important;
+}
+
+/* --- Header & Timer --- */
+.bg-light-red {
+  background-color: #FFF0F0;
+  color: #FF4444;
+}
+
+/* --- Question Card --- */
+.question-header {
+  background: linear-gradient(90deg, #343434 0%, #6E6E6E 100%);
+}
+
+.option-row {
+  background-color: #f9f9f9; /* Default light gray */
+  height: 60px;
+  transition: all 0.2s ease;
+}
+
+/* Border States */
+.default-border {
+  border: 1px solid #eee;
+}
+
+.selected-border {
+  border: 1px solid var(--purple-main);
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(117, 101, 217, 0.15);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  background-color: white;
+  border-color: #d1d1d1;
+}
+
+/* --- Progress Bar Mechanics --- */
+.progress-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--purple-main);
+  z-index: 1;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-content {
+  height: 100%;
+  width: 100%;
+  z-index: 2; /* Ensures text stays above progress bar */
+}
+
+/* --- Circular Indicators --- */
+.circle-indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.bg-purple {
+  background-color: var(--purple-main) !important;
+}
+
+.bg-gray {
+  background-color: var(--gray-circle) !important;
+}
+
+.text-purple {
+  color: var(--purple-main) !important;
+}
+
+/* --- Buttons --- */
+.btn-purple {
+  background-color: var(--purple-main);
+  color: white;
+  border: none;
+  transition: transform 0.2s;
+}
+
+.btn-purple:hover {
+  background-color: var(--purple-hover);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-purple:disabled {
+  background-color: #d1d1d1;
+  transform: none;
+}

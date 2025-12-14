@@ -1,0 +1,63 @@
+/* --- Colors & Variables --- */
+:root {
+  --purple-main: #7565d9;
+  --dark-header: #565656;
+  --gray-border: #e0e0e0;
+  --bg-light: #f9f9f9;
+}
+
+/* --- Layout Utilities --- */
+.hover-bg-gray:hover {
+  background-color: #f0f0f0;
+}
+
+/* --- Question Card Styling --- */
+.question-header {
+  background-color: var(--dark-header); /* #565656 */
+}
+
+.option-row {
+  background-color: #fff;
+  border: 1px solid var(--gray-border);
+  height: 60px; /* Fixed height for consistency */
+}
+
+/* --- Progress Bar Mechanics --- */
+.progress-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--purple-main); /* #7565d9 */
+  z-index: 1;
+  transition: width 0.5s ease;
+}
+
+.option-content {
+  z-index: 2; /* Ensures text sits on top of the bar */
+  width: 100%;
+}
+
+/* --- Text & Indicators --- */
+.circle-indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.bg-purple {
+  background-color: var(--purple-main) !important;
+}
+
+.text-purple {
+  color: var(--purple-main) !important;
+}
+
+.text-dark {
+  color: #333 !important;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
